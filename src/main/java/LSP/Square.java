@@ -1,7 +1,11 @@
 package LSP;
 
 /*
-Square breaks the expectation of Rectangle
+Liskov Substituion principle
+Not good: Square breaks the expectation of Rectangle
+Fix it by introducing an interface for Rectangle
+and Square instead.
+Use the Shape interface and change main accordingly.
  */
 public class Square extends Rectangle {
     @Override

@@ -6,12 +6,11 @@ package OCP;
  * 1) Explain why the new version of discount method is better
  * 2) Introduce new loyalty discount policy that
  *  gives 10% discount if loyality points > 1000
- */
-
-/*
-Old version - ikke lukket for ændring
- */
+ *  3) make unit tests for all three discount policies
+*/
 public class DiscountCalculator {
+
+   // Old version - ikke lukket for ændringer
     public double priceAfterDiscountOLD(String type, double price) {
         return switch (type) {
             case "student" -> price * 0.9;
@@ -20,9 +19,7 @@ public class DiscountCalculator {
         };
     }
 
-    /*
-    New version: Åben for udvidelse, lukket for ændring
-     */
+    // New version: Åben for udvidelse, lukket for ændring
     public double priceAfterDiscount(DiscountPolicy policy, double price) {
         return policy.apply(price);
     }

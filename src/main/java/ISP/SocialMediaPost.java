@@ -1,8 +1,10 @@
 package ISP;
 
 /* General purpose mega interface
-* Change design to 4 small dedicated interfaces instead
-* */
+* Change design into 4 small specific interfaces instead
+* Test that your refactored design works
+*/
+
 interface SocialMediaPost {
     void like();
     void comment(String text);

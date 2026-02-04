@@ -4,7 +4,9 @@ package SRP;
  * Single Responsibility Principle
  * Refactor so that:
  * Service methods handle each their responsibility
- * Consider introducing an extra class
+ * (calculation and printing)
+ * Refactor again: Create an extra UI class
+ * that does the actual printing
  */
 
 public class InvoiceService {
