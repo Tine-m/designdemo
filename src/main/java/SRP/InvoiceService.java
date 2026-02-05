@@ -10,13 +10,20 @@ package SRP;
  */
 
 public class InvoiceService {
+
+    UI ui = new UI();
+
     public double totalWithVat(double subtotal) {
         return subtotal * 1.25;
     }
 
-    public void printInvoice(double subtotal) {
-        double total = totalWithVat(subtotal);
-        System.out.println("Subtotal: " + subtotal);
-        System.out.println("Total incl. VAT: " + total);
+    public void printInvoice(double subtotal, double total) {
+       ui.printInvoide(subtotal, total);
+    }
+
+    //Alternativ 2
+    public void makeSale(double subtotal) {
+        double priceWithTax = totalWithVat(subtotal);
+        ui.printInvoide(subtotal, priceWithTax);
     }
 }

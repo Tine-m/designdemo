@@ -15,8 +15,8 @@ public class Main {
         System.out.println("Area of Rectangle (5x10): " + rc.getArea());
 
         Rectangle sq = new Square();
-        sq.setWidth(5);
-        sq.setHeight(10); // This should not be allowed for a square
+        sq.setWidth(10);
+        sq.setHeight(5); // This should not be allowed for a square
         System.out.println("Area of Square (5x10): " + sq.getArea()); // Expected 25, but gets 100
     }
 }
